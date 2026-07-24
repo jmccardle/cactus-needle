@@ -1,0 +1,22 @@
+[
+  {"query": "Turn brightness all the way up", "arguments": {"percent": "100"}},
+  {"query": "Set the brightness to 75%", "arguments": {"percent": "75"}},
+  {"query": "Dim the lights to 20 percent", "arguments": {"percent": "20"}},
+  {"query": "Half brightness", "arguments": {"percent": "50"}},
+  {"query": "Turn the display all the way down", "arguments": {"percent": "0"}},
+  {"query": "Max brightness", "arguments": {"percent": "100"}},
+  {"query": "Minimum brightness", "arguments": {"percent": "0"}},
+  {"query": "Set brightness to 30%", "arguments": {"percent": "30"}},
+  {"query": "Brighten to 85 percent", "arguments": {"percent": "85"}},
+  {"query": "Dim to 10%", "arguments": {"percent": "10"}},
+  {"query": "Set to 90 percent brightness", "arguments": {"percent": "90"}},
+  {"query": "Lower brightness to 15%", "arguments": {"percent": "15"}},
+  {"query": "Increase brightness to 60%", "arguments": {"percent": "60"}},
+  {"query": "Set the screen to 25 percent brightness", "arguments": {"percent": "25"}},
+  {"query": "Turn up the brightness to 95%", "arguments": {"percent": "95"}},
+  {"query": "Reduce brightness to 5 percent", "arguments": {"percent": "5"}},
+  {"query": "Set brightness to 40%", "arguments": {"percent": "40"}},
+  {"query": "Make it brighter at 70 percent", "arguments": {"percent": "70"}},
+  {"query": "Turn down to 35 percent brightness", "arguments": {"percent": "35"}},
+  {"query": "Full brightness now", "arguments": {"percent": "100"}}
+]

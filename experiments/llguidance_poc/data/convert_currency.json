@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Convert 100 US dollars to euros",
+    "arguments": {"amount": "100", "from_code": "USD", "to_code": "EUR"}
+  },
+  {
+    "query": "How much is 50 pounds in yen?",
+    "arguments": {"amount": "50", "from_code": "GBP", "to_code": "JPY"}
+  },
+  {
+    "query": "Convert 1250.5 euros to Canadian dollars",
+    "arguments": {"amount": "1250.5", "from_code": "EUR", "to_code": "CAD"}
+  },
+  {
+    "query": "I have 25.99 Australian dollars, convert to Swiss francs",
+    "arguments": {"amount": "25.99", "from_code": "AUD", "to_code": "CHF"}
+  },
+  {
+    "query": "Convert 500 yuan to Indian rupees",
+    "arguments": {"amount": "500", "from_code": "CNY", "to_code": "INR"}
+  },
+  {
+    "query": "How many Mexican pesos equal 75.50 US dollars?",
+    "arguments": {"amount": "75.50", "from_code": "USD", "to_code": "MXN"}
+  },
+  {
+    "query": "Convert 200 pounds to Canadian dollars",
+    "arguments": {"amount": "200", "from_code": "GBP", "to_code": "CAD"}
+  },
+  {
+    "query": "What's 1000 yen in euros?",
+    "arguments": {"amount": "1000", "from_code": "JPY", "to_code": "EUR"}
+  },
+  {
+    "query": "Convert 5.5 Swiss francs to Indian rupees",
+    "arguments": {"amount": "5.5", "from_code": "CHF", "to_code": "INR"}
+  },
+  {
+    "query": "How much is 300 Mexican pesos in pounds?",
+    "arguments": {"amount": "300", "from_code": "MXN", "to_code": "GBP"}
+  },
+  {
+    "query": "Convert 123.45 Australian dollars to yuan",
+    "arguments": {"amount": "123.45", "from_code": "AUD", "to_code": "CNY"}
+  },
+  {
+    "query": "I need to convert 750 euros to yen",
+    "arguments": {"amount": "750", "from_code": "EUR", "to_code": "JPY"}
+  },
+  {
+    "query": "Convert 89.99 Canadian dollars to pesos",
+    "arguments": {"amount": "89.99", "from_code": "CAD", "to_code": "MXN"}
+  },
+  {
+    "query": "What is 2000 rupees in Australian dollars?",
+    "arguments": {"amount": "2000", "from_code": "INR", "to_code": "AUD"}
+  },
+  {
+    "query": "Convert 45 Swiss francs to US dollars",
+    "arguments": {"amount": "45", "from_code": "CHF", "to_code": "USD"}
+  },
+  {
+    "query": "How many euros is 150 Mexican pesos?",
+    "arguments": {"amount": "150", "from_code": "MXN", "to_code": "EUR"}
+  },
+  {
+    "query": "Convert 333.33 yen to Chinese yuan",
+    "arguments": {"amount": "333.33", "from_code": "JPY", "to_code": "CNY"}
+  },
+  {
+    "query": "I want to convert 999 pounds to Indian rupees",
+    "arguments": {"amount": "999", "from_code": "GBP", "to_code": "INR"}
+  },
+  {
+    "query": "Convert 12.5 US dollars to Australian dollars",
+    "arguments": {"amount": "12.5", "from_code": "USD", "to_code": "AUD"}
+  },
+  {
+    "query": "How much is 650.75 Canadian dollars in Swiss francs?",
+    "arguments": {"amount": "650.75", "from_code": "CAD", "to_code": "CHF"}
+  }
+]

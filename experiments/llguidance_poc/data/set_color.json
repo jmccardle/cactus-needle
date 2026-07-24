@@ -1,0 +1,22 @@
+[
+  {"query": "Set the color to #FF0000", "arguments": {"hex": "#FF0000"}},
+  {"query": "Change to red", "arguments": {"hex": "#FF0000"}},
+  {"query": "Set background to hex 1A2B3C", "arguments": {"hex": "#1A2B3C"}},
+  {"query": "Apply the color blue", "arguments": {"hex": "#0000FF"}},
+  {"query": "Use hex code #FF5733", "arguments": {"hex": "#FF5733"}},
+  {"query": "Make it green", "arguments": {"hex": "#00FF00"}},
+  {"query": "Color this white", "arguments": {"hex": "#FFFFFF"}},
+  {"query": "Set to #3E5C76", "arguments": {"hex": "#3E5C76"}},
+  {"query": "Apply black color", "arguments": {"hex": "#000000"}},
+  {"query": "Change to hex A94B4B", "arguments": {"hex": "#A94B4B"}},
+  {"query": "Use yellow", "arguments": {"hex": "#FFFF00"}},
+  {"query": "Set color to #C1121F", "arguments": {"hex": "#C1121F"}},
+  {"query": "Apply cyan", "arguments": {"hex": "#00FFFF"}},
+  {"query": "Change background to #9E4244", "arguments": {"hex": "#9E4244"}},
+  {"query": "Use magenta", "arguments": {"hex": "#FF00FF"}},
+  {"query": "Set to hex D4A574", "arguments": {"hex": "#D4A574"}},
+  {"query": "Make it orange", "arguments": {"hex": "#FFA500"}},
+  {"query": "Color to #2A4858", "arguments": {"hex": "#2A4858"}},
+  {"query": "Apply purple", "arguments": {"hex": "#800080"}},
+  {"query": "Change to hex B89B88", "arguments": {"hex": "#B89B88"}}
+]
