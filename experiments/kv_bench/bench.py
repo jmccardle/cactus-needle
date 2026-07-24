@@ -12,7 +12,7 @@ import os, sys, json, time, glob, statistics as st
 os.environ.setdefault("JAX_PLATFORMS", "cpu")
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "llguidance_poc"))
 sys.path.insert(0, os.path.dirname(__file__))
-import numpy as np, jax.numpy as jnp
+import numpy as np, jax, jax.numpy as jnp
 
 from kv_model import KVNeedle
 from needle_llg import NeedleLLG
@@ -99,6 +99,7 @@ def kv_jf(kv, nl, ck, cv, cbias):
         gen.append(nt); pos += 1
         if m.is_stopped():
             break
+    jnp.asarray(logits).block_until_ready()  # forced-run extends dispatch without a read; await
     dt = now() - t
     return _finish(kv, gen), gen, passes, dt
 
@@ -165,9 +166,12 @@ def _rec(a, enc_len, prefill_s, gen_toks, gen_s, passes):
 def write_report(acc, n):
     names = {"stock": "stock (full-buffer)", "kv": "KV-cache",
              "jf": "JumpForward", "kv_jf": "KV + JumpForward"}
+    backend = jax.default_backend().upper()
+    dev = jax.devices()[0]
+    devname = getattr(dev, "device_kind", str(dev))
     lines = ["# Needle decode benchmark: stock / KV / JumpForward / KV+JumpForward\n"]
-    lines.append(f"{n} prompts (all 10 tools shown each call), greedy, CPU JAX. "
-                 f"Prefill = encoder ingest (+cross-KV projection for KV configs). "
+    lines.append(f"{n} prompts (all 10 tools shown each call), greedy, {backend} JAX "
+                 f"({devname}). Prefill = encoder ingest (+cross-KV projection for KV configs). "
                  f"Generation = output-token decode loop.\n")
     lines.append("| config | prefill tok/s | **gen tok/s** | mean fwd passes | mean out tok | "
                  "mean total ms | end-to-end speedup |")
@@ -195,19 +199,53 @@ def write_report(acc, n):
     lines.append(f"- **Combined**: stock -> KV+JF = {gens('kv_jf') / gens('stock'):.1f}x gen tok/s.")
     lines.append(f"- KV-cache under jump-forward: JF -> KV+JF = {gens('kv_jf') / gens('jf'):.1f}x.")
     lines.append(f"- Jump-forward under KV-cache: KV -> KV+JF = {gens('kv_jf') / gens('kv'):.1f}x.")
-    lines.append(f"- The two wins are ~orthogonal and multiply: {gens('kv')/gens('stock'):.1f}x x "
-                 f"{gens('jf')/gens('stock'):.1f}x ~= {gens('kv_jf')/gens('stock'):.1f}x.")
-    lines.append("\n**Prefill vs generation tradeoff.** KV's prefill tok/s is *lower* (it projects "
-                 "cross-K/V once, up front) but that is exactly the per-token work stock repeats "
-                 "every step — so end-to-end latency still drops sharply (see 'mean total ms'). The "
-                 "cross-KV front-load pays for itself within the first couple of output tokens.")
+    r_kv = gens('kv') / gens('stock')
+    r_jf = gens('jf') / gens('stock')
+    r_comb = gens('kv_jf') / gens('stock')
+    pred = r_kv * r_jf
+    best = max(r_kv, r_jf)
+    if pred and r_comb >= 0.8 * pred:
+        lines.append(f"- The two wins are ~orthogonal and multiply: {r_kv:.1f}x x {r_jf:.1f}x "
+                     f"~= {r_comb:.1f}x. Each attacks a different cost (KV = per-pass work, "
+                     f"jump-forward = number of passes), so on this backend they compound.")
+    elif r_comb >= best * 1.03:
+        lines.append(f"- The two wins **help but do not multiply** ({r_kv:.1f}x x {r_jf:.1f}x would "
+                     f"predict {pred:.1f}x; actual stock -> KV+JF is {r_comb:.1f}x). They overlap: "
+                     f"KV-cache collapses per-pass cost, so once a pass is cheap, cutting the "
+                     f"*number* of passes adds less than its standalone {r_jf:.1f}x.")
+    else:
+        lines.append(f"- **Combining is not additive here — the best single config wins.** "
+                     f"stock -> KV = {r_kv:.1f}x, stock -> JF = {r_jf:.1f}x, but stock -> KV+JF is "
+                     f"only {r_comb:.1f}x, *below* JF alone (JF -> KV+JF = {gens('kv_jf')/gens('jf'):.1f}x). "
+                     f"On this backend a full-buffer pass is already compute-negligible, so the "
+                     f"KV-cache optimizes work that is already free while adding per-pass kernel/host "
+                     f"overhead (dynamic-slice cache writes, more small ops, grammar consume). "
+                     f"The bottleneck has shifted from per-pass FLOPs (compute-bound, CPU) to "
+                     f"per-pass dispatch/host latency (launch-bound, GPU batch-1) — where KV-cache "
+                     f"and jump-forward stop compounding and batching (see batched_throughput) is "
+                     f"the lever instead.")
+    stock_ms = 1000 * (acc["stock"]["prefill_s"] + acc["stock"]["gen_s"]) / n
+    kv_ms = 1000 * (acc["kv"]["prefill_s"] + acc["kv"]["gen_s"]) / n
+    if kv_ms <= stock_ms * 0.9:
+        lines.append("\n**Prefill vs generation tradeoff.** KV's prefill tok/s is *lower* (it projects "
+                     "cross-K/V once, up front) but that is exactly the per-token work stock repeats "
+                     f"every step — so end-to-end latency drops ({stock_ms:.0f} -> {kv_ms:.0f} ms; see "
+                     "'mean total ms'). The cross-KV front-load pays for itself within the first "
+                     "couple of output tokens.")
+    else:
+        lines.append("\n**Prefill vs generation tradeoff.** KV's prefill tok/s is *lower* (it projects "
+                     "cross-K/V once, up front). On this backend that front-load does **not** pay off: "
+                     f"end-to-end latency is flat across configs ({stock_ms:.0f} vs {kv_ms:.0f} ms) "
+                     "because the un-cached full-buffer pass it eliminates is already ~free here — the "
+                     "wall time is host-loop/dispatch bound, not model-compute bound.")
     lines.append("\nNotes: mean-fwd-passes for stock/KV = output tokens + 1 (one pass per token); "
                  "for JF/KV+JF it is the number of *model* passes after collapsing grammar-forced "
-                 "runs into batched extends. Absolute tok/s are CPU-bound and un-cached per-pass; "
-                 "the *ratios* are the result. On the un-cached decode each stock pass re-runs the "
+                 f"runs into batched extends. Absolute tok/s are {backend}-bound and un-cached "
+                 "per-pass; the *ratios* are the result. On the un-cached decode each stock pass re-runs the "
                  "whole decoder over the full buffer AND re-projects cross-K/V over all encoder "
                  "positions — that reprojection is exactly what the KV config caches once at prefill.")
-    open(os.path.join(OUT, "results.md"), "w").write("\n".join(lines) + "\n")
+    suffix = "" if jax.default_backend() == "cpu" else "_" + jax.default_backend()
+    open(os.path.join(OUT, f"results{suffix}.md"), "w").write("\n".join(lines) + "\n")
     print("\n".join(lines))
 
 

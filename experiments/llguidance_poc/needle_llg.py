@@ -22,6 +22,11 @@ from tools_spec import build_union_grammar
 
 CKPT = "/storage/needle-e1/weights/needle.pkl"
 SP_PATH = "/storage/needle-e1/weights/tokenizer/needle.model"
+# Fixed encoder length so the full-buffer decode_step compiles ONCE. The encoder input
+# is variable-length; padding it (pad positions are masked in cross-attn) keeps the output
+# identical but pins encoder_out's shape, avoiding a per-prompt XLA recompile of _decode —
+# invisible on CPU but a ~1.8s/prompt tax on GPU. Matches KVNeedle's enc_max.
+ENC_PAD = 640
 
 
 def _token_bytes(sp, i):
@@ -77,6 +82,7 @@ class NeedleLLG:
     # ---- encoder (shared by both arms) ----
     def encode(self, query, tools_json):
         enc_tokens = _build_encoder_input(self.tok, query, tools_json, DEFAULT_MAX_ENC_LEN)
+        enc_tokens = enc_tokens[:ENC_PAD] + [self.pad_id] * max(0, ENC_PAD - len(enc_tokens))
         enc_input = jnp.array([enc_tokens])
         src_mask = make_padding_mask(enc_input, self.pad_id)
         encoder_out, enc_mask = self.model.apply(
@@ -167,6 +173,7 @@ class NeedleLLG:
             if m.is_stopped():
                 break
             logits = self._decode(buf, enc_out, enc_mask); passes += 1
+        jax.block_until_ready(logits)  # forced-run passes dispatch without a read; await them
         dt = (time.perf_counter() - t0) * 1000
         return {"text": self._finish(gen), "passes": passes, "tokens": len(gen),
                 "ms": dt, "forced": ff_total}

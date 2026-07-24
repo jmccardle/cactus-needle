@@ -111,8 +111,10 @@ forced the instant they're disambiguated. A large fraction of a ~40-token tool c
 grammar-certain. Under a schema grammar with enums, a command like
 `[{"name":"move","arguments":{"direction":"forward"}}]` is almost entirely forced — plausibly
 **~5–8 real decode passes instead of ~40**. That compounds with the KV-cache win from
-`EXPORT_PATHS.md`: caching cuts the cost *per* pass (~300×), jump-forward cuts the *number* of
-passes.
+`EXPORT_PATHS.md`: caching cuts the cost *per* pass (~300× in FLOPs), jump-forward cuts the
+*number* of passes. (Measured, the two compound to **10.5× gen tok/s on CPU**; on GPU at batch 1
+they don't — the per-pass compute is already free and the bottleneck is host dispatch, so the
+lever there is batching. See `GPU_NOTES.md`.)
 
 ### Where the commit applies vs. where you re-implement the technique
 

@@ -81,11 +81,17 @@ class KVNeedle:
     # ---- encoder + cross-KV (prefill) ----
     def encode(self, query, tools_json, max_enc_len=DEFAULT_MAX_ENC_LEN):
         toks = _build_encoder_input(self.tok, query, tools_json, max_enc_len)
+        real_len = len(toks)
+        # Pad encoder input to a fixed enc_max so the encoder AND the downstream full-buffer
+        # decode compile once. Pad positions are masked in attention -> output unchanged for
+        # real positions. Without this, encoder_out's variable length forces a per-prompt XLA
+        # recompile (~1.8s each on GPU) that lands on whichever decode arm runs first.
+        toks = toks[:self.enc_max] + [self.tok.pad_token_id] * max(0, self.enc_max - real_len)
         enc_input = jnp.array([toks])
         src_mask = make_padding_mask(enc_input, self.tok.pad_token_id)
         enc_out, enc_mask = self.model.apply(
             {"params": self.params}, enc_input, src_mask=src_mask, method="encode")
-        return enc_out, enc_mask, len(toks)
+        return enc_out, enc_mask, min(real_len, self.enc_max)
 
     def cross_kv(self, enc_out, enc_mask):
         """Project encoder output to per-layer cross K/V (padded to enc_max) + bias."""

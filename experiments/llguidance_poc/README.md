@@ -94,6 +94,7 @@ anyway (same property as the `f7c5864c` llama.cpp commit: byte-identical at temp
   the model's native format.
 - **Stock un-cached decode.** Both arms use Needle's existing full-buffer decode step (no KV cache),
   so absolute ms is slow and CPU-bound; the *ratio* is what's meaningful. A KV-cached decode (see
-  `EXPORT_PATHS.md`) would cut per-pass cost ~300× on top of the pass-count win here.
+  `EXPORT_PATHS.md`, implemented in `../kv_bench`) stacks on top: **measured 6.6× more gen tok/s on
+  CPU** (much less on GPU, where per-pass compute is already ~free — see `../../GPU_NOTES.md`).
 - **Not fine-tuned.** Every number is the stock checkpoint. Tonight's point was the decoding
   machinery and the validity/speed deltas, not accuracy tuning.

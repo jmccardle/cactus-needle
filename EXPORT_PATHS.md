@@ -34,6 +34,13 @@ Rough FLOP delta for one decode step, `enc_len=1024`: current JAX path ≈ **13 
 a properly cached step ≈ **40 MFLOP**. Order of ~300×. That gap is most of the distance between
 this repo and Cactus's quoted 1200 tok/s decode.
 
+> **Measured caveat.** ~300× is the *FLOP* ratio, not the wall-clock speedup. Once implemented
+> (`experiments/kv_bench`), the KV-cache delivered **6.6× gen tok/s on CPU** and only **1.1× on
+> GPU (RTX 4090) at batch 1** — because a full-buffer pass is only ~0.6 ms on-device, so the
+> saved FLOPs are already near-free and wall time is host/dispatch bound. The FLOP win is only
+> realized as throughput under **batching** (and would compound with a batched cache). See
+> `GPU_NOTES.md`.
+
 **This matters for the export question because it is already solved upstream** — see §1.
 
 ---
