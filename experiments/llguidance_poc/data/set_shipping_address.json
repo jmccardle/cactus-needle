@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Please ship to San Francisco, California 94103",
+    "arguments": {"state": "CA", "zip": "94103"}
+  },
+  {
+    "query": "Send it to New York City, NY 10001",
+    "arguments": {"state": "NY", "zip": "10001"}
+  },
+  {
+    "query": "Deliver to Cambridge, Massachusetts 02139",
+    "arguments": {"state": "MA", "zip": "02139"}
+  },
+  {
+    "query": "Ship to Houston, Texas 77001",
+    "arguments": {"state": "TX", "zip": "77001"}
+  },
+  {
+    "query": "Send my order to Miami, Florida 33101",
+    "arguments": {"state": "FL", "zip": "33101"}
+  },
+  {
+    "query": "Deliver to Seattle, Washington 98101",
+    "arguments": {"state": "WA", "zip": "98101"}
+  },
+  {
+    "query": "Please ship to Chicago, IL 60601",
+    "arguments": {"state": "IL", "zip": "60601"}
+  },
+  {
+    "query": "Deliver my package to Phoenix, Arizona 85001",
+    "arguments": {"state": "AZ", "zip": "85001"}
+  },
+  {
+    "query": "Ship to Atlanta, Georgia 30303",
+    "arguments": {"state": "GA", "zip": "30303"}
+  },
+  {
+    "query": "Send to Cleveland, Ohio 44114",
+    "arguments": {"state": "OH", "zip": "44114"}
+  },
+  {
+    "query": "Deliver to Hartford, Connecticut 06101",
+    "arguments": {"state": "CT", "zip": "06101"}
+  },
+  {
+    "query": "Ship to Newark, New Jersey 07102",
+    "arguments": {"state": "NJ", "zip": "07102"}
+  },
+  {
+    "query": "Please deliver to Philadelphia, Pennsylvania 19101",
+    "arguments": {"state": "PA", "zip": "19101"}
+  },
+  {
+    "query": "Shipping address: Detroit, Michigan 48201",
+    "arguments": {"state": "MI", "zip": "48201"}
+  },
+  {
+    "query": "Ship my order to Charlotte, North Carolina 28202",
+    "arguments": {"state": "NC", "zip": "28202"}
+  },
+  {
+    "query": "Deliver to Denver, Colorado 80201",
+    "arguments": {"state": "CO", "zip": "80201"}
+  },
+  {
+    "query": "Send it to Minneapolis, Minnesota 55401",
+    "arguments": {"state": "MN", "zip": "55401"}
+  },
+  {
+    "query": "Ship to Manchester, New Hampshire 03101",
+    "arguments": {"state": "NH", "zip": "03101"}
+  },
+  {
+    "query": "Deliver to Providence, Rhode Island 02903",
+    "arguments": {"state": "RI", "zip": "02903"}
+  },
+  {
+    "query": "Please ship to Portland, Maine 04101",
+    "arguments": {"state": "ME", "zip": "04101"}
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Set the thermostat to 50 degrees Fahrenheit",
+    "arguments": {"temperature": "50", "unit": "F"}
+  },
+  {
+    "query": "Please set the temperature to 90F",
+    "arguments": {"temperature": "90", "unit": "F"}
+  },
+  {
+    "query": "Set thermostat to 50 Celsius",
+    "arguments": {"temperature": "50", "unit": "C"}
+  },
+  {
+    "query": "Turn up the heat to 90 degrees Celsius",
+    "arguments": {"temperature": "90", "unit": "C"}
+  },
+  {
+    "query": "Adjust the thermostat to 68 Fahrenheit",
+    "arguments": {"temperature": "68", "unit": "F"}
+  },
+  {
+    "query": "Make it 72 degrees F",
+    "arguments": {"temperature": "72", "unit": "F"}
+  },
+  {
+    "query": "Set the temperature to 75F please",
+    "arguments": {"temperature": "75", "unit": "F"}
+  },
+  {
+    "query": "I want it at 55 degrees Fahrenheit",
+    "arguments": {"temperature": "55", "unit": "F"}
+  },
+  {
+    "query": "Heat it up to 85F",
+    "arguments": {"temperature": "85", "unit": "F"}
+  },
+  {
+    "query": "Set heating to 70 degrees F",
+    "arguments": {"temperature": "70", "unit": "F"}
+  },
+  {
+    "query": "Configure the thermostat to 21 Celsius",
+    "arguments": {"temperature": "21", "unit": "C"}
+  },
+  {
+    "query": "Please adjust to 25 degrees C",
+    "arguments": {"temperature": "25", "unit": "C"}
+  },
+  {
+    "query": "Set the room temperature to 30C",
+    "arguments": {"temperature": "30", "unit": "C"}
+  },
+  {
+    "query": "Make it 18 degrees Celsius",
+    "arguments": {"temperature": "18", "unit": "C"}
+  },
+  {
+    "query": "Turn up the thermostat to 32C",
+    "arguments": {"temperature": "32", "unit": "C"}
+  },
+  {
+    "query": "Set temperature to 28 Celsius",
+    "arguments": {"temperature": "28", "unit": "C"}
+  },
+  {
+    "query": "Adjust to 60 degrees Fahrenheit",
+    "arguments": {"temperature": "60", "unit": "F"}
+  },
+  {
+    "query": "Set the AC to 80F",
+    "arguments": {"temperature": "80", "unit": "F"}
+  },
+  {
+    "query": "I'd like 65 Fahrenheit please",
+    "arguments": {"temperature": "65", "unit": "F"}
+  },
+  {
+    "query": "Configure thermostat to 22C",
+    "arguments": {"temperature": "22", "unit": "C"}
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Set a timer for 1 hour 30 minutes",
+    "arguments": {"hours": "1", "minutes": "30", "seconds": "0"}
+  },
+  {
+    "query": "Give me 45 seconds",
+    "arguments": {"hours": "0", "minutes": "0", "seconds": "45"}
+  },
+  {
+    "query": "2 and a half minutes",
+    "arguments": {"hours": "0", "minutes": "2", "seconds": "30"}
+  },
+  {
+    "query": "Countdown 10 minutes",
+    "arguments": {"hours": "0", "minutes": "10", "seconds": "0"}
+  },
+  {
+    "query": "Set timer for 23 hours",
+    "arguments": {"hours": "23", "minutes": "0", "seconds": "0"}
+  },
+  {
+    "query": "30 seconds please",
+    "arguments": {"hours": "0", "minutes": "0", "seconds": "30"}
+  },
+  {
+    "query": "5 hours and 15 minutes",
+    "arguments": {"hours": "5", "minutes": "15", "seconds": "0"}
+  },
+  {
+    "query": "Timer for 59 minutes",
+    "arguments": {"hours": "0", "minutes": "59", "seconds": "0"}
+  },
+  {
+    "query": "1 minute and 45 seconds",
+    "arguments": {"hours": "0", "minutes": "1", "seconds": "45"}
+  },
+  {
+    "query": "3 hours",
+    "arguments": {"hours": "3", "minutes": "0", "seconds": "0"}
+  },
+  {
+    "query": "Set a 12 hour timer",
+    "arguments": {"hours": "12", "minutes": "0", "seconds": "0"}
+  },
+  {
+    "query": "15 seconds",
+    "arguments": {"hours": "0", "minutes": "0", "seconds": "15"}
+  },
+  {
+    "query": "2 hours 30 minutes 15 seconds",
+    "arguments": {"hours": "2", "minutes": "30", "seconds": "15"}
+  },
+  {
+    "query": "45 minutes and 59 seconds",
+    "arguments": {"hours": "0", "minutes": "45", "seconds": "59"}
+  },
+  {
+    "query": "1 hour and 1 minute",
+    "arguments": {"hours": "1", "minutes": "1", "seconds": "0"}
+  },
+  {
+    "query": "20 seconds",
+    "arguments": {"hours": "0", "minutes": "0", "seconds": "20"}
+  },
+  {
+    "query": "6 hours 45 minutes",
+    "arguments": {"hours": "6", "minutes": "45", "seconds": "0"}
+  },
+  {
+    "query": "59 minutes and 59 seconds",
+    "arguments": {"hours": "0", "minutes": "59", "seconds": "59"}
+  },
+  {
+    "query": "Timer for 8 hours 30 minutes 45 seconds",
+    "arguments": {"hours": "8", "minutes": "30", "seconds": "45"}
+  },
+  {
+    "query": "Just 5 seconds",
+    "arguments": {"hours": "0", "minutes": "0", "seconds": "5"}
+  }
+]

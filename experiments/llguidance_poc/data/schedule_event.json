@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Schedule a meeting for August 15th, 2026 at 2:30 PM",
+    "arguments": {"date": "2026-08-15", "time": "14:30"}
+  },
+  {
+    "query": "Book an appointment on January 3rd, 2025 at 9:15 AM",
+    "arguments": {"date": "2025-01-03", "time": "09:15"}
+  },
+  {
+    "query": "Set up a conference call for December 25th, 2026 at midnight",
+    "arguments": {"date": "2026-12-25", "time": "00:00"}
+  },
+  {
+    "query": "Remind me to call at March 21st, 2027 at 11:45 PM",
+    "arguments": {"date": "2027-03-21", "time": "23:45"}
+  },
+  {
+    "query": "Add to calendar: July 4th, 2025 at 10:00 AM",
+    "arguments": {"date": "2025-07-04", "time": "10:00"}
+  },
+  {
+    "query": "Schedule the interview for May 17th, 2026 at 3:45 PM",
+    "arguments": {"date": "2026-05-17", "time": "15:45"}
+  },
+  {
+    "query": "Book a dentist appointment on February 14th, 2024 at 8:30 AM",
+    "arguments": {"date": "2024-02-14", "time": "08:30"}
+  },
+  {
+    "query": "Set a reminder for April 30th, 2025 at 5:15 PM",
+    "arguments": {"date": "2025-04-30", "time": "17:15"}
+  },
+  {
+    "query": "Schedule training session on June 1st, 2026 at 6:00 AM",
+    "arguments": {"date": "2026-06-01", "time": "06:00"}
+  },
+  {
+    "query": "Add event: September 10th, 2024 at 12:00 PM",
+    "arguments": {"date": "2024-09-10", "time": "12:00"}
+  },
+  {
+    "query": "Book travel for November 20th, 2027 at 7:30 PM",
+    "arguments": {"date": "2027-11-20", "time": "19:30"}
+  },
+  {
+    "query": "Schedule call on October 5th, 2025 at 4:00 PM",
+    "arguments": {"date": "2025-10-05", "time": "16:00"}
+  },
+  {
+    "query": "Set up meeting for January 31st, 2026 at 1:15 AM",
+    "arguments": {"date": "2026-01-31", "time": "01:15"}
+  },
+  {
+    "query": "Remind me on December 31st, 2026 at 11:59 PM",
+    "arguments": {"date": "2026-12-31", "time": "23:59"}
+  },
+  {
+    "query": "Add to my calendar: August 8th, 2027 at 2:00 PM",
+    "arguments": {"date": "2027-08-08", "time": "14:00"}
+  },
+  {
+    "query": "Book the event on March 15th, 2025 at 9:45 AM",
+    "arguments": {"date": "2025-03-15", "time": "09:45"}
+  },
+  {
+    "query": "Schedule workout for July 22nd, 2024 at 6:30 AM",
+    "arguments": {"date": "2024-07-22", "time": "06:30"}
+  },
+  {
+    "query": "Set appointment on April 1st, 2026 at 11:30 AM",
+    "arguments": {"date": "2026-04-01", "time": "11:30"}
+  },
+  {
+    "query": "Remind me on May 5th, 2024 at 3:20 PM",
+    "arguments": {"date": "2024-05-05", "time": "15:20"}
+  },
+  {
+    "query": "Schedule dinner reservation for November 11th, 2025 at 7:00 PM",
+    "arguments": {"date": "2025-11-11", "time": "19:00"}
+  }
+]

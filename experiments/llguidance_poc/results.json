@@ -1,0 +1,6965 @@
+{
+ "rows": [
+  {
+   "domain": "schedule_event",
+   "query": "Schedule a meeting for August 15th, 2026 at 2:30 PM",
+   "expected": {
+    "date": "2026-08-15",
+    "time": "14:30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-08-15\",\"time\":\"15:00\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 1096.755263977684,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-08-15\",\"time\":\"15:00\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 522.5226689944975,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Book an appointment on January 3rd, 2025 at 9:15 AM",
+   "expected": {
+    "date": "2025-01-03",
+    "time": "09:15"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-01-03\",\"time\":\"21:15\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 871.7306820326485,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-01-03\",\"time\":\"21:15\"}}]",
+    "passes": 12,
+    "tokens": 20,
+    "ms": 411.51134099345654,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Set up a conference call for December 25th, 2026 at midnight",
+   "expected": {
+    "date": "2026-12-25",
+    "time": "00:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"2026-12-25\",\"date\":\"2026-12-31\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1169.608528027311,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-12-25\",\"time\":\"00:00\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 437.19919596333057,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Remind me to call at March 21st, 2027 at 11:45 PM",
+   "expected": {
+    "date": "2027-03-21",
+    "time": "23:45"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"21:45\",\"date\":\"2027-05-21\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1141.9777909759432,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2027-03-21\",\"time\":\"11:45\"}}]",
+    "passes": 15,
+    "tokens": 23,
+    "ms": 524.2963200435042,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Add to calendar: July 4th, 2025 at 10:00 AM",
+   "expected": {
+    "date": "2025-07-04",
+    "time": "10:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-07-04\",\"time\":\"10:00 AM\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 1067.8970539593138,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-07-04\",\"time\":\"10:00\"}}]",
+    "passes": 12,
+    "tokens": 20,
+    "ms": 397.6565949851647,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Schedule the interview for May 17th, 2026 at 3:45 PM",
+   "expected": {
+    "date": "2026-05-17",
+    "time": "15:45"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-05-01\",\"time\":\"15:45\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 954.393741034437,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-05-01\",\"time\":\"15:45\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 448.2123000198044,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Book a dentist appointment on February 14th, 2024 at 8:30 AM",
+   "expected": {
+    "date": "2024-02-14",
+    "time": "08:30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"08:30\",\"date\":\"2024-02-14\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 1028.2096280134283,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2024-02-14\",\"time\":\"08:30\"}}]",
+    "passes": 12,
+    "tokens": 20,
+    "ms": 420.0656649773009,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Set a reminder for April 30th, 2025 at 5:15 PM",
+   "expected": {
+    "date": "2025-04-30",
+    "time": "17:15"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"17:15\",\"date\":\"2025-04-30\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 911.3787620444782,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-04-30\",\"time\":\"17:15\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 459.8108849604614,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Schedule training session on June 1st, 2026 at 6:00 AM",
+   "expected": {
+    "date": "2026-06-01",
+    "time": "06:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"06:00\",\"date\":\"2026-06-01\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 956.0209210030735,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-06-01\",\"time\":\"06:00\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 474.5096970000304,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Add event: September 10th, 2024 at 12:00 PM",
+   "expected": {
+    "date": "2024-09-10",
+    "time": "12:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"12:00 PM\",\"date\":\"2024-09-10\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 967.1458200318739,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2024-09-10\",\"time\":\"12:00\"}}]",
+    "passes": 12,
+    "tokens": 21,
+    "ms": 396.4047099580057,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Book travel for November 20th, 2027 at 7:30 PM",
+   "expected": {
+    "date": "2027-11-20",
+    "time": "19:30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2027-11-20\",\"time\":\"19:30\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 884.8422910086811,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2027-11-20\",\"time\":\"19:30\"}}]",
+    "passes": 12,
+    "tokens": 21,
+    "ms": 417.055401019752,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Schedule call on October 5th, 2025 at 4:00 PM",
+   "expected": {
+    "date": "2025-10-05",
+    "time": "16:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"16:00\",\"date\":\"2025-10-05\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 981.1851870035753,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-10-05\",\"time\":\"16:00\"}}]",
+    "passes": 10,
+    "tokens": 19,
+    "ms": 373.72191302711144,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Set up meeting for January 31st, 2026 at 1:15 AM",
+   "expected": {
+    "date": "2026-01-31",
+    "time": "01:15"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-01-31\",\"time\":\"1:15\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 938.8445080257952,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-01-31\",\"time\":\"15:15\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 477.8251710231416,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Remind me on December 31st, 2026 at 11:59 PM",
+   "expected": {
+    "date": "2026-12-31",
+    "time": "23:59"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"21:00\",\"date\":\"2026-12-31\"}},{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"11:59 PM\",\"hours\":\"31\",\"minutes\":\"11\"}}]",
+    "passes": 47,
+    "tokens": 46,
+    "ms": 1758.1785329966806,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-12-31\",\"time\":\"11:59\"}}]",
+    "passes": 16,
+    "tokens": 24,
+    "ms": 548.1106269871816,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Add to my calendar: August 8th, 2027 at 2:00 PM",
+   "expected": {
+    "date": "2027-08-08",
+    "time": "14:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2027-08-08\",\"time\":\"14:00\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 1018.8495659967884,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2027-08-08\",\"time\":\"14:00\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 503.04530694847926,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Book the event on March 15th, 2025 at 9:45 AM",
+   "expected": {
+    "date": "2025-03-15",
+    "time": "09:45"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-03-15\",\"time\":\"09:45\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 902.8865970321931,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-03-15\",\"time\":\"09:45\"}}]",
+    "passes": 13,
+    "tokens": 21,
+    "ms": 431.6051210043952,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Schedule workout for July 22nd, 2024 at 6:30 AM",
+   "expected": {
+    "date": "2024-07-22",
+    "time": "06:30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2024-07-22\",\"time\":\"06:30\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 914.4954810035415,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2024-07-22\",\"time\":\"06:30\"}}]",
+    "passes": 12,
+    "tokens": 21,
+    "ms": 437.1045010047965,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Set appointment on April 1st, 2026 at 11:30 AM",
+   "expected": {
+    "date": "2026-04-01",
+    "time": "11:30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"11:30\",\"date\":\"2026-04-01\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 994.5252669858746,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2026-04-01\",\"time\":\"11:30\"}}]",
+    "passes": 14,
+    "tokens": 23,
+    "ms": 462.7000120235607,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Remind me on May 5th, 2024 at 3:20 PM",
+   "expected": {
+    "date": "2024-05-05",
+    "time": "15:20"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"time\":\"05:00\",\"date\":\"2024-05-25\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 1054.5479800202884,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2024-05-05\",\"time\":\"15:00\"}}]",
+    "passes": 10,
+    "tokens": 19,
+    "ms": 365.31516996910796,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "schedule_event",
+   "query": "Schedule dinner reservation for November 11th, 2025 at 7:00 PM",
+   "expected": {
+    "date": "2025-11-11",
+    "time": "19:00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-11-11\",\"time\":\"07:00\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 864.2509429482743,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"schedule_event\",\"arguments\":{\"date\":\"2025-11-11\",\"time\":\"07:00\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 405.39476700359955,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 100 US dollars to euros",
+   "expected": {
+    "amount": "100",
+    "from_code": "USD",
+    "to_code": "EUR"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"100\",\"from_code\":\"US dollars\",\"to_code\":\"EUR\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1283.1847479683347,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"100\",\"from_code\":\"USD\",\"to_code\":\"EUR\"}}]",
+    "passes": 11,
+    "tokens": 27,
+    "ms": 381.61410501925275,
+    "forced": 20,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "How much is 50 pounds in yen?",
+   "expected": {
+    "amount": "50",
+    "from_code": "GBP",
+    "to_code": "JPY"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"50\",\"from_code\":\"GBP\",\"to_code\":\"JPY\"}}]",
+    "passes": 29,
+    "tokens": 28,
+    "ms": 1299.4721219874918,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"50\",\"from_code\":\"GBP\",\"to_code\":\"JPY\"}}]",
+    "passes": 11,
+    "tokens": 28,
+    "ms": 361.68885900406167,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 1250.5 euros to Canadian dollars",
+   "expected": {
+    "amount": "1250.5",
+    "from_code": "EUR",
+    "to_code": "CAD"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"1250.5\",\"from_code\":\"euros\",\"to_code\":\"Canadian\"}}]",
+    "passes": 34,
+    "tokens": 33,
+    "ms": 1255.8286269777454,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"1250.5\",\"from_code\":\"EUR\",\"to_code\":\"CAD\"}}]",
+    "passes": 14,
+    "tokens": 30,
+    "ms": 483.17595396656543,
+    "forced": 20,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "I have 25.99 Australian dollars, convert to Swiss francs",
+   "expected": {
+    "amount": "25.99",
+    "from_code": "AUD",
+    "to_code": "CHF"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"25.99\",\"from_code\":\"AUD\",\"to_code\":\"SW-CH\"}}]",
+    "passes": 35,
+    "tokens": 34,
+    "ms": 1380.6925170356408,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"25.99\",\"from_code\":\"AUD\",\"to_code\":\"CHF\"}}]",
+    "passes": 13,
+    "tokens": 32,
+    "ms": 420.9483620361425,
+    "forced": 23,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 500 yuan to Indian rupees",
+   "expected": {
+    "amount": "500",
+    "from_code": "CNY",
+    "to_code": "INR"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"500 yuan\",\"from_code\":\"yuan\",\"to_code\":\"Indian rupees\"}}]",
+    "passes": 37,
+    "tokens": 36,
+    "ms": 1627.1847659954801,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"500\",\"from_code\":\"JPY\",\"to_code\":\"INR\"}}]",
+    "passes": 11,
+    "tokens": 29,
+    "ms": 370.195675001014,
+    "forced": 22,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "How many Mexican pesos equal 75.50 US dollars?",
+   "expected": {
+    "amount": "75.50",
+    "from_code": "USD",
+    "to_code": "MXN"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"75.50\",\"from_code\":\"US\",\"to_code\":\"MXN\"}}]",
+    "passes": 31,
+    "tokens": 30,
+    "ms": 1262.4982729903422,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"75.50\",\"from_code\":\"USD\",\"to_code\":\"MXN\"}}]",
+    "passes": 12,
+    "tokens": 31,
+    "ms": 392.40170299308375,
+    "forced": 23,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 200 pounds to Canadian dollars",
+   "expected": {
+    "amount": "200",
+    "from_code": "GBP",
+    "to_code": "CAD"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"200 pounds\",\"from_code\":\"pounds\",\"to_code\":\"Canadian\"}}]",
+    "passes": 35,
+    "tokens": 34,
+    "ms": 1512.1724990312941,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"200\",\"from_code\":\"GBP\",\"to_code\":\"CAD\"}}]",
+    "passes": 12,
+    "tokens": 28,
+    "ms": 395.2175510348752,
+    "forced": 20,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "What's 1000 yen in euros?",
+   "expected": {
+    "amount": "1000",
+    "from_code": "JPY",
+    "to_code": "EUR"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"1000\",\"from_code\":\"JPY\",\"to_code\":\"EUR\"}}]",
+    "passes": 29,
+    "tokens": 28,
+    "ms": 1150.0011349562556,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"1000\",\"from_code\":\"JPY\",\"to_code\":\"EUR\"}}]",
+    "passes": 11,
+    "tokens": 28,
+    "ms": 359.4125990057364,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 5.5 Swiss francs to Indian rupees",
+   "expected": {
+    "amount": "5.5",
+    "from_code": "CHF",
+    "to_code": "INR"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":5.5,\"from_code\":\"Swiss francs\",\"to_code\":\"Indian rupees\"}}]",
+    "passes": 36,
+    "tokens": 35,
+    "ms": 1424.812993966043,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"5.5\",\"from_code\":\"CHF\",\"to_code\":\"INR\"}}]",
+    "passes": 12,
+    "tokens": 29,
+    "ms": 388.7039499823004,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "How much is 300 Mexican pesos in pounds?",
+   "expected": {
+    "amount": "300",
+    "from_code": "MXN",
+    "to_code": "GBP"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"300\",\"from_code\":\"MXN\",\"to_code\":\"GBP\"}}]",
+    "passes": 30,
+    "tokens": 29,
+    "ms": 1200.0557940336876,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"300\",\"from_code\":\"MXN\",\"to_code\":\"GBP\"}}]",
+    "passes": 12,
+    "tokens": 29,
+    "ms": 405.7350920047611,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 123.45 Australian dollars to yuan",
+   "expected": {
+    "amount": "123.45",
+    "from_code": "AUD",
+    "to_code": "CNY"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"123.45\",\"from_code\":\"Australian\",\"to_code\":\"yuan\"}}]",
+    "passes": 34,
+    "tokens": 33,
+    "ms": 1360.988401051145,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"123.45\",\"from_code\":\"AUD\",\"to_code\":\"JPY\"}}]",
+    "passes": 11,
+    "tokens": 31,
+    "ms": 373.97565599530935,
+    "forced": 24,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "I need to convert 750 euros to yen",
+   "expected": {
+    "amount": "750",
+    "from_code": "EUR",
+    "to_code": "JPY"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"750\",\"from_code\":\"EUR\",\"to_code\":\"JPY\"}}]",
+    "passes": 30,
+    "tokens": 29,
+    "ms": 1277.659204963129,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"750\",\"from_code\":\"EUR\",\"to_code\":\"JPY\"}}]",
+    "passes": 12,
+    "tokens": 29,
+    "ms": 387.9049920360558,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 89.99 Canadian dollars to pesos",
+   "expected": {
+    "amount": "89.99",
+    "from_code": "CAD",
+    "to_code": "MXN"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"89.99\",\"from_code\":\"Canadian\",\"to_code\":\"pesos\"}}]",
+    "passes": 33,
+    "tokens": 32,
+    "ms": 1263.5893269907683,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"89.99\",\"from_code\":\"CAD\",\"to_code\":\"MXN\"}}]",
+    "passes": 13,
+    "tokens": 32,
+    "ms": 408.09174499008805,
+    "forced": 23,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "What is 2000 rupees in Australian dollars?",
+   "expected": {
+    "amount": "2000",
+    "from_code": "INR",
+    "to_code": "AUD"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"2000\",\"from_code\":\"rupees\",\"to_code\":\"Australian\"}}]",
+    "passes": 34,
+    "tokens": 33,
+    "ms": 1376.2680820073,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"2000\",\"from_code\":\"CHF\",\"to_code\":\"AUD\"}}]",
+    "passes": 13,
+    "tokens": 31,
+    "ms": 410.54915805580094,
+    "forced": 22,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 45 Swiss francs to US dollars",
+   "expected": {
+    "amount": "45",
+    "from_code": "CHF",
+    "to_code": "USD"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"45\",\"from_code\":\"Swiss francs\",\"to_code\":\"US dollars\"}}]",
+    "passes": 33,
+    "tokens": 32,
+    "ms": 1299.8531499761157,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"45\",\"from_code\":\"CHF\",\"to_code\":\"USD\"}}]",
+    "passes": 12,
+    "tokens": 29,
+    "ms": 417.8732360014692,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "How many euros is 150 Mexican pesos?",
+   "expected": {
+    "amount": "150",
+    "from_code": "MXN",
+    "to_code": "EUR"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"150\",\"from_code\":\"MXN\",\"to_code\":\"EUR\"}}]",
+    "passes": 29,
+    "tokens": 28,
+    "ms": 1136.9970180094242,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"150\",\"from_code\":\"MXN\",\"to_code\":\"EUR\"}}]",
+    "passes": 11,
+    "tokens": 28,
+    "ms": 350.97212402615696,
+    "forced": 21,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 333.33 yen to Chinese yuan",
+   "expected": {
+    "amount": "333.33",
+    "from_code": "JPY",
+    "to_code": "CNY"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"333.33\",\"from_code\":\"yen\",\"to_code\":\"Chinese yuan\"}}]",
+    "passes": 35,
+    "tokens": 34,
+    "ms": 1360.8518000110053,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"333.33\",\"from_code\":\"JPY\",\"to_code\":\"CNY\"}}]",
+    "passes": 13,
+    "tokens": 32,
+    "ms": 414.14062702097,
+    "forced": 23,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "I want to convert 999 pounds to Indian rupees",
+   "expected": {
+    "amount": "999",
+    "from_code": "GBP",
+    "to_code": "INR"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"pounds\",\"from_code\":\"pounds\",\"to_code\":\"Indian rupees\"}}]",
+    "passes": 36,
+    "tokens": 35,
+    "ms": 1442.8421310149133,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"999\",\"from_code\":\"GBP\",\"to_code\":\"INR\"}}]",
+    "passes": 11,
+    "tokens": 27,
+    "ms": 364.46499498561025,
+    "forced": 20,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "Convert 12.5 US dollars to Australian dollars",
+   "expected": {
+    "amount": "12.5",
+    "from_code": "USD",
+    "to_code": "AUD"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"12.5\",\"from_code\":\"US dollars\",\"to_code\":\"Australian dollars\"}}]",
+    "passes": 33,
+    "tokens": 32,
+    "ms": 1268.2105109561235,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"12.5\",\"from_code\":\"USD\",\"to_code\":\"AUD\"}}]",
+    "passes": 11,
+    "tokens": 29,
+    "ms": 355.94471398508176,
+    "forced": 22,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "convert_currency",
+   "query": "How much is 650.75 Canadian dollars in Swiss francs?",
+   "expected": {
+    "amount": "650.75",
+    "from_code": "CAD",
+    "to_code": "CHF"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"650.75Canadian\",\"from_code\":\"CAD\",\"to_code\":\"SW-CHF\"}}]",
+    "passes": 41,
+    "tokens": 40,
+    "ms": 1636.9526860071346,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"650.75\",\"from_code\":\"CAD\",\"to_code\":\"CAD\"}}]",
+    "passes": 15,
+    "tokens": 33,
+    "ms": 531.8508329801261,
+    "forced": 22,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Please ship to San Francisco, California 94103",
+   "expected": {
+    "state": "CA",
+    "zip": "94103"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"San Francisco\",\"zip\":\"94103\"}}]",
+    "passes": 30,
+    "tokens": 29,
+    "ms": 1212.3813080252148,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"SC\",\"zip\":\"94103\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 512.0195829658769,
+    "forced": 14,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Send it to New York City, NY 10001",
+   "expected": {
+    "state": "NY",
+    "zip": "10001"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NY\",\"zip\":\"10001\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 942.8860599873587,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NY\",\"zip\":\"10001\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 390.6129650422372,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Deliver to Cambridge, Massachusetts 02139",
+   "expected": {
+    "state": "MA",
+    "zip": "02139"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Cambridge\",\"zip\":\"02139\"}},{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Massachusetts\",\"zip\":\"021",
+    "passes": 48,
+    "tokens": 47,
+    "ms": 1822.92410597438,
+    "score": {
+     "json_ok": false,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"CA\",\"zip\":\"02139\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 449.977409967687,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Ship to Houston, Texas 77001",
+   "expected": {
+    "state": "TX",
+    "zip": "77001"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Houston\",\"zip\":\"77001\"}},{\"name\":\"set_dark\",\"arguments\":{\"temperature\":\"00000\",\"unit\":\"Texas\"}}]",
+    "passes": 46,
+    "tokens": 45,
+    "ms": 1761.8457520147786,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"HI\",\"zip\":\"77001\"}}]",
+    "passes": 11,
+    "tokens": 23,
+    "ms": 389.50909196864814,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Send my order to Miami, Florida 33101",
+   "expected": {
+    "state": "FL",
+    "zip": "33101"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Miami\",\"zip\":\"33101\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 990.9622959676199,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"MA\",\"zip\":\"33101\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 426.23256403021514,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Deliver to Seattle, Washington 98101",
+   "expected": {
+    "state": "WA",
+    "zip": "98101"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Seattle\",\"zip\":\"98101\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1091.124209051486,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"WA\",\"zip\":\"98101\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 440.736401011236,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Please ship to Chicago, IL 60601",
+   "expected": {
+    "state": "IL",
+    "zip": "60601"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Chicago\",\"zip\":\"60601\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 1116.087484988384,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"CA\",\"zip\":\"60601\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 432.6145970262587,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Deliver my package to Phoenix, Arizona 85001",
+   "expected": {
+    "state": "AZ",
+    "zip": "85001"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Phoenix\",\"zip\":\"85001\"}}]",
+    "passes": 27,
+    "tokens": 26,
+    "ms": 1093.4503009775653,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"PA\",\"zip\":\"85001\"}}]",
+    "passes": 11,
+    "tokens": 23,
+    "ms": 407.88864897331223,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Ship to Atlanta, Georgia 30303",
+   "expected": {
+    "state": "GA",
+    "zip": "30303"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Atlanta\",\"zip\":\"30303\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1099.2150290403515,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"AZ\",\"zip\":\"30303\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 452.02885300386697,
+    "forced": 14,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Send to Cleveland, Ohio 44114",
+   "expected": {
+    "state": "OH",
+    "zip": "44114"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Cleveland\",\"zip\":\"44114\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1006.926188012585,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"CA\",\"zip\":\"44114\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 436.02385598933324,
+    "forced": 14,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Deliver to Hartford, Connecticut 06101",
+   "expected": {
+    "state": "CT",
+    "zip": "06101"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Hartford\",\"zip\":\"06101\"}}]",
+    "passes": 27,
+    "tokens": 26,
+    "ms": 1071.5273729874752,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"HI\",\"zip\":\"06101\"}}]",
+    "passes": 12,
+    "tokens": 24,
+    "ms": 428.69004397653043,
+    "forced": 16,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Ship to Newark, New Jersey 07102",
+   "expected": {
+    "state": "NJ",
+    "zip": "07102"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+    "passes": 48,
+    "tokens": 47,
+    "ms": 1905.4572089808062,
+    "score": {
+     "json_ok": false,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NY\",\"zip\":\"07102\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 476.94264096207917,
+    "forced": 14,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Please deliver to Philadelphia, Pennsylvania 19101",
+   "expected": {
+    "state": "PA",
+    "zip": "19101"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Philadelphia\",\"zip\":\"19101\"}}]",
+    "passes": 30,
+    "tokens": 29,
+    "ms": 1385.9631739906035,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"PA\",\"zip\":\"19101\"}}]",
+    "passes": 12,
+    "tokens": 24,
+    "ms": 399.3147370056249,
+    "forced": 16,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Shipping address: Detroit, Michigan 48201",
+   "expected": {
+    "state": "MI",
+    "zip": "48201"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"zip\":\"48201\",\"state\":\"DE\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1023.5316840116866,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"DE\",\"zip\":\"48201\"}}]",
+    "passes": 11,
+    "tokens": 23,
+    "ms": 406.33791498839855,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Ship my order to Charlotte, North Carolina 28202",
+   "expected": {
+    "state": "NC",
+    "zip": "28202"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"North Carolina\",\"zip\":\"28202\"}}]",
+    "passes": 30,
+    "tokens": 29,
+    "ms": 1363.4869329980575,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NC\",\"zip\":\"28202\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 515.3996399603784,
+    "forced": 14,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Deliver to Denver, Colorado 80201",
+   "expected": {
+    "state": "CO",
+    "zip": "80201"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Denver\",\"zip\":\"80201\"}},{\"name\":\"set_brightness\",\"arguments\":{\"stars\":\"Denver\"}}]",
+    "passes": 41,
+    "tokens": 40,
+    "ms": 1571.9472049968317,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"DE\",\"zip\":\"80201\"}}]",
+    "passes": 11,
+    "tokens": 23,
+    "ms": 391.86982496175915,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Send it to Minneapolis, Minnesota 55401",
+   "expected": {
+    "state": "MN",
+    "zip": "55401"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Minneapolis\",\"zip\":\"55401\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1091.224642994348,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NV\",\"zip\":\"55401\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 442.0315530151129,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Ship to Manchester, New Hampshire 03101",
+   "expected": {
+    "state": "NH",
+    "zip": "03101"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Manchester\",\"zip\":\"03101\"}},{\"name\":\"set_dark\",\"arguments\":{\"temperature\":\"25\",\"lon\":\"00101\"}}]",
+    "passes": 44,
+    "tokens": 43,
+    "ms": 1667.0607780106366,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"MA\",\"zip\":\"03101\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 424.7696030070074,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Deliver to Providence, Rhode Island 02903",
+   "expected": {
+    "state": "RI",
+    "zip": "02903"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"Providence\",\"lon\":\"02903\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 937.6344890333712,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"02.903\"}}]",
+    "passes": 18,
+    "tokens": 24,
+    "ms": 644.9627070105635,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_shipping_address",
+   "query": "Please ship to Portland, Maine 04101",
+   "expected": {
+    "state": "ME",
+    "zip": "04101"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"Portland\",\"zip\":\"04101\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1042.2585630440153,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"PA\",\"zip\":\"04101\"}}]",
+    "passes": 12,
+    "tokens": 24,
+    "ms": 398.46529898932204,
+    "forced": 16,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "I'd rate it a perfect 5 stars",
+   "expected": {
+    "stars": "5"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 672.9214519727975,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 179.3311380315572,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Give this product 5 stars, absolutely amazing",
+   "expected": {
+    "stars": "5"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 695.1559169683605,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 184.49152202811092,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Best purchase ever, rate it 5 out of 5",
+   "expected": {
+    "stars": "5"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 670.3352850163355,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 170.40488397469744,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "This deserves the maximum rating of five stars",
+   "expected": {
+    "stars": "5"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"five\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 764.8737560375594,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 189.12354402709752,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Rate this a solid 4 stars",
+   "expected": {
+    "stars": "4"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"4\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 807.7801700565033,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"4\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 188.05477704154328,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "I'd give it four stars, really good",
+   "expected": {
+    "stars": "4"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"four\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 724.4581150007434,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"4\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 176.55621201265603,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Pretty excellent, I'd say 4 out of 5",
+   "expected": {
+    "stars": "4"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 677.9338830383494,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"5\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 178.96285699680448,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Great product, rate it four stars",
+   "expected": {
+    "stars": "4"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"four\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 699.460692005232,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"4\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 178.74062701594085,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "It's okay, I'd rate it 3 stars",
+   "expected": {
+    "stars": "3"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 16,
+    "tokens": 15,
+    "ms": 671.9295930233784,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 181.91624397877604,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Give this three out of five stars",
+   "expected": {
+    "stars": "3"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"35-5\"}}]",
+    "passes": 18,
+    "tokens": 17,
+    "ms": 766.3036220474169,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 191.83869496919215,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Not bad, not great - rate it three",
+   "expected": {
+    "stars": "3"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 658.2777309813537,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 194.81458701193333,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Average product, deserves 3 stars",
+   "expected": {
+    "stars": "3"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 16,
+    "tokens": 15,
+    "ms": 710.1070820353925,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"3\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 177.7406799956225,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Not very good, I rate it 2 stars",
+   "expected": {
+    "stars": "2"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2 stars\"}}]",
+    "passes": 18,
+    "tokens": 17,
+    "ms": 739.1472270246595,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 189.87968697911128,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Disappointing, give it two out of five",
+   "expected": {
+    "stars": "2"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"5\"}}]",
+    "passes": 14,
+    "tokens": 13,
+    "ms": 628.6995889968239,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"5\"}}]",
+    "passes": 7,
+    "tokens": 13,
+    "ms": 261.90948102157563,
+    "forced": 8,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Below average, rate this 2 stars",
+   "expected": {
+    "stars": "2"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#RGBB\"}},{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2\"}}]",
+    "passes": 32,
+    "tokens": 31,
+    "ms": 1264.1193100134842,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FFFFFF\"}}]",
+    "passes": 9,
+    "tokens": 17,
+    "ms": 290.3222019667737,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "I'd only give it two stars",
+   "expected": {
+    "stars": "2"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2-CA\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 830.4217840195633,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 179.12583600264043,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "This is terrible, rate it 1 star",
+   "expected": {
+    "stars": "1"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"1\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 637.2595719876699,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"1\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 149.2558969766833,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Worst product ever, one star",
+   "expected": {
+    "stars": "1"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"one star\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 748.0799420154653,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 180.4497889825143,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Don't recommend, give it 1 out of 5 stars",
+   "expected": {
+    "stars": "1"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"1\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 657.0523329428397,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"1\"}}]",
+    "passes": 5,
+    "tokens": 14,
+    "ms": 144.1836419980973,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "rate_product",
+   "query": "Poor quality, deserves just one star",
+   "expected": {
+    "stars": "1"
+   },
+   "stock": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"one star\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 693.0465699988417,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"rate_product\",\"arguments\":{\"stars\":\"2\"}}]",
+    "passes": 6,
+    "tokens": 15,
+    "ms": 175.42803601827472,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Turn brightness all the way up",
+   "expected": {
+    "percent": "100"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 504.13477298570797,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"90\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 264.7958380402997,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Set the brightness to 75%",
+   "expected": {
+    "percent": "75"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"75\"}}]",
+    "passes": 16,
+    "tokens": 15,
+    "ms": 687.1364190010354,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"75\"}}]",
+    "passes": 9,
+    "tokens": 15,
+    "ms": 287.1382290031761,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Dim the lights to 20 percent",
+   "expected": {
+    "percent": "20"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"20\"}}]",
+    "passes": 14,
+    "tokens": 13,
+    "ms": 775.5929070408456,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"20\"}}]",
+    "passes": 7,
+    "tokens": 13,
+    "ms": 246.22070096665993,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Half brightness",
+   "expected": {
+    "percent": "50"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"Half\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 892.3356279847212,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"50\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 234.25870400387794,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Turn the display all the way down",
+   "expected": {
+    "percent": "0"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 207.51873700646684,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"90\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 245.65460602752864,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Max brightness",
+   "expected": {
+    "percent": "100"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":100}}]",
+    "passes": 13,
+    "tokens": 12,
+    "ms": 736.8199480115436,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"30\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 254.6054979902692,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Minimum brightness",
+   "expected": {
+    "percent": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"50\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 669.6048710145988,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"50\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 257.29087501531467,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Set brightness to 30%",
+   "expected": {
+    "percent": "30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"30\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 805.7960590231232,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"30\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 258.35843302775174,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Brighten to 85 percent",
+   "expected": {
+    "percent": "85"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":85}}]",
+    "passes": 14,
+    "tokens": 13,
+    "ms": 630.7101869606413,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"85\"}}]",
+    "passes": 9,
+    "tokens": 15,
+    "ms": 283.2200229750015,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Dim to 10%",
+   "expected": {
+    "percent": "10"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"10\"}}]",
+    "passes": 14,
+    "tokens": 13,
+    "ms": 629.5343199744821,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"10\"}}]",
+    "passes": 7,
+    "tokens": 13,
+    "ms": 239.9940610048361,
+    "forced": 8,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Set to 90 percent brightness",
+   "expected": {
+    "percent": "90"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":90}}]",
+    "passes": 13,
+    "tokens": 12,
+    "ms": 609.9879109533504,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"90\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 252.5529389968142,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Lower brightness to 15%",
+   "expected": {
+    "percent": "15"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"15\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 670.0082229799591,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"15\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 243.53513499954715,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Increase brightness to 60%",
+   "expected": {
+    "percent": "60"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"60\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 618.5512259835377,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"60\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 247.57468601455912,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Set the screen to 25 percent brightness",
+   "expected": {
+    "percent": "25"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"25\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 649.8723319964483,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"25\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 252.61204998241737,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Turn up the brightness to 95%",
+   "expected": {
+    "percent": "95"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"95\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 687.1842339751311,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"95\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 274.03827698435634,
+    "forced": 8,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Reduce brightness to 5 percent",
+   "expected": {
+    "percent": "5"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"5\"}}]",
+    "passes": 14,
+    "tokens": 13,
+    "ms": 628.8095109630376,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"5\"}}]",
+    "passes": 7,
+    "tokens": 13,
+    "ms": 255.16093999613076,
+    "forced": 8,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Set brightness to 40%",
+   "expected": {
+    "percent": "40"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"40\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 666.8247299967334,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"40\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 234.8586010048166,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Make it brighter at 70 percent",
+   "expected": {
+    "percent": "70"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"70\"}}]",
+    "passes": 16,
+    "tokens": 15,
+    "ms": 698.925775999669,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"70\"}}]",
+    "passes": 9,
+    "tokens": 15,
+    "ms": 294.56840199418366,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Turn down to 35 percent brightness",
+   "expected": {
+    "percent": "35"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"35\"}}]",
+    "passes": 15,
+    "tokens": 14,
+    "ms": 646.8798739952035,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"35\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 291.7362440493889,
+    "forced": 8,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_brightness",
+   "query": "Full brightness now",
+   "expected": {
+    "percent": "100"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 259.37634002184495,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"45\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 249.65162697480991,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Call 415-555-0199",
+   "expected": {
+    "number": "415-555-0199"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"415-555-0199\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 842.7097990061156,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"415-555-0199\"}}]",
+    "passes": 10,
+    "tokens": 19,
+    "ms": 326.8276989692822,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Dial (212) 555 0147",
+   "expected": {
+    "number": "212-555-0147"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"(212) 555 0147)\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1004.2929080082104,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"212-555-0101\"}}]",
+    "passes": 11,
+    "tokens": 20,
+    "ms": 358.56634797528386,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Phone 8005551234",
+   "expected": {
+    "number": "800-555-1234"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"8005551234\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 789.7253400296904,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"800-561-2222\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 445.4365750425495,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Ring 617.555.0182",
+   "expected": {
+    "number": "617-555-0182"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"617.555.0182\",\"zip\":\"617.555.0182\"}}]",
+    "passes": 36,
+    "tokens": 35,
+    "ms": 1387.0411210227758,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"SC\",\"zip\":\"61755\"}}]",
+    "passes": 15,
+    "tokens": 26,
+    "ms": 528.9493009913713,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Call me at (305) 555-0123",
+   "expected": {
+    "number": "305-555-0123"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"305\"}}]",
+    "passes": 16,
+    "tokens": 15,
+    "ms": 670.635681017302,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"305-555-0123\"}}]",
+    "passes": 11,
+    "tokens": 20,
+    "ms": 368.7117920489982,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Dial the number 2025550145",
+   "expected": {
+    "number": "202-555-0145"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"2025550145\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 799.7070099809207,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"202-501-4502\"}}]",
+    "passes": 11,
+    "tokens": 20,
+    "ms": 399.8847920447588,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Phone 703.555.0198",
+   "expected": {
+    "number": "703-555-0198"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"703.555.0198\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 987.0795879978687,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"703-555-1989\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 464.4464830053039,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Ring up 5125550176",
+   "expected": {
+    "number": "512-555-0176"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"5125550176\",\"zip\":\"5125550176\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1098.6719239735976,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"AR\",\"zip\":\"51255\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 372.2386750159785,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Can you call (206) 555-0123?",
+   "expected": {
+    "number": "206-555-0123"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"206\",\"zip\":\"555-0123\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 921.9812540104613,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NV\",\"zip\":\"20601\"}}]",
+    "passes": 12,
+    "tokens": 23,
+    "ms": 395.08903701789677,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Please dial 303-555-0198",
+   "expected": {
+    "number": "303-555-0198"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"303-555-0198\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 854.2696899967268,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"303-555-0198\"}}]",
+    "passes": 11,
+    "tokens": 20,
+    "ms": 350.62155104242265,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Call 408 555 0147",
+   "expected": {
+    "number": "408-555-0147"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"408 555 0147\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 889.0603309846483,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"408-555-0014\"}}]",
+    "passes": 12,
+    "tokens": 21,
+    "ms": 406.757952994667,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Dial (360)5550182",
+   "expected": {
+    "number": "360-555-0182"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"360)5550182\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 893.7779979896732,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"360-805-5501\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 421.28293396672234,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Phone 6145550145",
+   "expected": {
+    "number": "614-555-0145"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"6145550145\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 849.6357290423475,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"614-551-5501\"}}]",
+    "passes": 14,
+    "tokens": 23,
+    "ms": 466.62477898644283,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Ring this number: 404.555.0199",
+   "expected": {
+    "number": "404-555-0199"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"404.555.0199\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 947.3259400110692,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"404-550-1999\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 477.06833900883794,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Place a call to (720) 555 0123",
+   "expected": {
+    "number": "720-555-0123"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"720\",\"zip\":\"0720\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1063.6818670318462,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"KY\",\"zip\":\"72000\"}}]",
+    "passes": 13,
+    "tokens": 24,
+    "ms": 455.99874400068074,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Dial 813 555-0147",
+   "expected": {
+    "number": "813-555-0147"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"813 555-0147\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 867.590706970077,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"813-567-5553\"}}]",
+    "passes": 15,
+    "tokens": 24,
+    "ms": 510.3294740547426,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Call (415)555-0182",
+   "expected": {
+    "number": "415-555-0182"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"415)555-0182\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 839.6601810236461,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"415-805-5553\"}}]",
+    "passes": 12,
+    "tokens": 21,
+    "ms": 396.4506310294382,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Phone 5035550198",
+   "expected": {
+    "number": "503-555-0198"
+   },
+   "stock": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"5035550198\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 793.0003269575536,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"dial_phone\",\"arguments\":{\"number\":\"503-561-9801\"}}]",
+    "passes": 13,
+    "tokens": 22,
+    "ms": 422.7349660359323,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Ring 972.555.0145",
+   "expected": {
+    "number": "972-555-0145"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"972.555.0145\",\"zip\":\"972.555.0145\"}}]",
+    "passes": 34,
+    "tokens": 33,
+    "ms": 1372.4654310499318,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NV\",\"zip\":\"97250\"}}]",
+    "passes": 14,
+    "tokens": 25,
+    "ms": 460.6044510146603,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "dial_phone",
+   "query": "Can you call (916) 555 0176?",
+   "expected": {
+    "number": "916-555-0176"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"916\",\"zip\":\"0176\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1049.3314700433984,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_shipping_address\",\"arguments\":{\"state\":\"NM\",\"zip\":\"91600\"}}]",
+    "passes": 14,
+    "tokens": 25,
+    "ms": 454.24718997674063,
+    "forced": 15,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Set the color to #FF0000",
+   "expected": {
+    "hex": "#FF0000"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 763.0445049726404,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 8,
+    "tokens": 16,
+    "ms": 248.72261000564322,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Change to red",
+   "expected": {
+    "hex": "#FF0000"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 248.66256001405418,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 8,
+    "tokens": 16,
+    "ms": 256.4768359879963,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Set background to hex 1A2B3C",
+   "expected": {
+    "hex": "#1A2B3C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"1A2B3C\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 824.1172170382924,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#1A2B3C\"}}]",
+    "passes": 12,
+    "tokens": 20,
+    "ms": 375.48825301928446,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Apply the color blue",
+   "expected": {
+    "hex": "#0000FF"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 732.9817559802905,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 8,
+    "tokens": 16,
+    "ms": 253.01702204160392,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Use hex code #FF5733",
+   "expected": {
+    "hex": "#FF5733"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF5733\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 754.4131629983895,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF5733\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 328.0250480165705,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Make it green",
+   "expected": {
+    "hex": "#00FF00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 727.762033988256,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 8,
+    "tokens": 16,
+    "ms": 239.5551039953716,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Color this white",
+   "expected": {
+    "hex": "#FFFFFF"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FFFFFF\"}}]",
+    "passes": 18,
+    "tokens": 17,
+    "ms": 792.765791004058,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FFFFFF\"}}]",
+    "passes": 9,
+    "tokens": 17,
+    "ms": 295.05149595206603,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Set to #3E5C76",
+   "expected": {
+    "hex": "#3E5C76"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#3E5C76\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 855.5116119678132,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#3E5C76\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 352.3127650259994,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Apply black color",
+   "expected": {
+    "hex": "#000000"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 735.2480340050533,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 8,
+    "tokens": 16,
+    "ms": 279.6241620089859,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Change to hex A94B4B",
+   "expected": {
+    "hex": "#A94B4B"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"A94B4B\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 881.3458619988523,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#A94B4B\"}}]",
+    "passes": 12,
+    "tokens": 20,
+    "ms": 389.0709099941887,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Use yellow",
+   "expected": {
+    "hex": "#FFFF00"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 17,
+    "tokens": 16,
+    "ms": 731.3730699825101,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FF0000\"}}]",
+    "passes": 8,
+    "tokens": 16,
+    "ms": 260.50766196567565,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Set color to #C1121F",
+   "expected": {
+    "hex": "#C1121F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#C1121F\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 880.8366330340505,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#C1121F\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 363.7795500108041,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Apply cyan",
+   "expected": {
+    "hex": "#00FFFF"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 226.77779803052545,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"21\",\"minutes\":\"50\",\"seconds\":\"9\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 506.0496560181491,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Change background to #9E4244",
+   "expected": {
+    "hex": "#9E4244"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#9E4244\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 823.30892898608,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#9E4244\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 380.6885840022005,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Use magenta",
+   "expected": {
+    "hex": "#FF00FF"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 223.81513303844258,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"35\"}}]",
+    "passes": 9,
+    "tokens": 15,
+    "ms": 287.31256298488006,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Set to hex D4A574",
+   "expected": {
+    "hex": "#D4A574"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"D4A574\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 856.4488029805943,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#D4A574\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 394.7113629546948,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Make it orange",
+   "expected": {
+    "hex": "#FFA500"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"082\",\"hours\":\"92.1522\",\"minutes\":\"08.5522\"}}]",
+    "passes": 32,
+    "tokens": 31,
+    "ms": 1352.045357984025,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"0\",\"minutes\":\"0\",\"seconds\":\"0\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 475.7300630444661,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Color to #2A4858",
+   "expected": {
+    "hex": "#2A4858"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#2A4858\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 837.0561290066689,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#2A4858\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 418.38504699990153,
+    "forced": 10,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Apply purple",
+   "expected": {
+    "hex": "#800080"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FFFFFF\"}}]",
+    "passes": 18,
+    "tokens": 17,
+    "ms": 795.4665900324471,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#FFFFFF\"}}]",
+    "passes": 9,
+    "tokens": 17,
+    "ms": 297.41113499039784,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_color",
+   "query": "Change to hex B89B88",
+   "expected": {
+    "hex": "#B89B88"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"B89B88\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 793.9412650302984,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_color\",\"arguments\":{\"hex\":\"#B89B88\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 379.3678890215233,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set the thermostat to 50 degrees Fahrenheit",
+   "expected": {
+    "temperature": "50",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"50\",\"unit\":\"fahrenheit\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 735.4432860156521,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"50\",\"unit\":\"F\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 323.1809930293821,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Please set the temperature to 90F",
+   "expected": {
+    "temperature": "90",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"90F\",\"unit\":\"A\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 862.0680309832096,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"90\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 329.64763999916613,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set thermostat to 50 Celsius",
+   "expected": {
+    "temperature": "50",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"50 Celsius\",\"unit\":\"CAM\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 945.6346899969503,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"50\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 327.7586130425334,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Turn up the heat to 90 degrees Celsius",
+   "expected": {
+    "temperature": "90",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"90\",\"unit\":\"celsius\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 808.4674909478053,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"90\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 329.2642600135878,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Adjust the thermostat to 68 Fahrenheit",
+   "expected": {
+    "temperature": "68",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"68 Fahrenheit\",\"unit\":\"fahrenheit\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 869.2825469770469,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"68\",\"unit\":\"F\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 357.2621089988388,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Make it 72 degrees F",
+   "expected": {
+    "temperature": "72",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"72\",\"unit\":\"F\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 816.1371470196173,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"72\",\"unit\":\"F\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 377.89329001680017,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set the temperature to 75F please",
+   "expected": {
+    "temperature": "75",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"75F\",\"unit\":\"fahrenheit\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 869.2294980282895,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"75\",\"unit\":\"C\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 356.7123429966159,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "I want it at 55 degrees Fahrenheit",
+   "expected": {
+    "temperature": "55",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"55.940\",\"lon\":\"27.5140\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1091.5273270220496,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"55.940\",\"lon\":\"27.5140\"}}]",
+    "passes": 21,
+    "tokens": 27,
+    "ms": 751.6570999869145,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Heat it up to 85F",
+   "expected": {
+    "temperature": "85",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":85}}]",
+    "passes": 14,
+    "tokens": 13,
+    "ms": 620.4026059713215,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"85\"}}]",
+    "passes": 9,
+    "tokens": 15,
+    "ms": 294.7395739611238,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set heating to 70 degrees F",
+   "expected": {
+    "temperature": "70",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"70\",\"unit\":\"F\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 845.1012219884433,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"70\",\"unit\":\"F\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 359.69763103639707,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Configure the thermostat to 21 Celsius",
+   "expected": {
+    "temperature": "21",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"21 Celsius\",\"unit\":\"CAM\"}}]",
+    "passes": 22,
+    "tokens": 21,
+    "ms": 894.6301100077108,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"90\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 319.08574397675693,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Please adjust to 25 degrees C",
+   "expected": {
+    "temperature": "25",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"25\",\"unit\":\"C\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 861.2168100080453,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"50\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 310.62150199431926,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set the room temperature to 30C",
+   "expected": {
+    "temperature": "30",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"30C\",\"unit\":\"room\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 805.7815929641947,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"50\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 340.7616480253637,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Make it 18 degrees Celsius",
+   "expected": {
+    "temperature": "18",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"18\",\"unit\":\"celsius\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 788.6479620356113,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"89\",\"unit\":\"C\"}}]",
+    "passes": 11,
+    "tokens": 18,
+    "ms": 358.45976101700217,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Turn up the thermostat to 32C",
+   "expected": {
+    "temperature": "32",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"32C\",\"unit\":\"A\"}}]",
+    "passes": 21,
+    "tokens": 20,
+    "ms": 898.798328009434,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"53\",\"unit\":\"C\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 369.8745280271396,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set temperature to 28 Celsius",
+   "expected": {
+    "temperature": "28",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"28\",\"unit\":\"celsius\"}}]",
+    "passes": 19,
+    "tokens": 18,
+    "ms": 787.5044249813072,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"82\",\"unit\":\"C\"}}]",
+    "passes": 11,
+    "tokens": 19,
+    "ms": 369.4956079707481,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Adjust to 60 degrees Fahrenheit",
+   "expected": {
+    "temperature": "60",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 202.47146399924532,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"60\",\"lon\":\"95.0522\"}}]",
+    "passes": 16,
+    "tokens": 22,
+    "ms": 565.0932060088962,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Set the AC to 80F",
+   "expected": {
+    "temperature": "80",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"80F\"}}]",
+    "passes": 16,
+    "tokens": 15,
+    "ms": 670.6203179783188,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_brightness\",\"arguments\":{\"percent\":\"80\"}}]",
+    "passes": 8,
+    "tokens": 14,
+    "ms": 241.95109499851242,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "I'd like 65 Fahrenheit please",
+   "expected": {
+    "temperature": "65",
+    "unit": "F"
+   },
+   "stock": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"65 Fahrenheit\",\"from_code\":\"CHN\",\"to_code\":\"USD\"}}]",
+    "passes": 31,
+    "tokens": 30,
+    "ms": 1264.2202799906954,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"convert_currency\",\"arguments\":{\"amount\":\"65\",\"from_code\":\"GBP\",\"to_code\":\"USD\"}}]",
+    "passes": 12,
+    "tokens": 27,
+    "ms": 409.582499996759,
+    "forced": 19,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_thermostat",
+   "query": "Configure thermostat to 22C",
+   "expected": {
+    "temperature": "22",
+    "unit": "C"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"22C\",\"unit\":\"CA\"}}]",
+    "passes": 20,
+    "tokens": 19,
+    "ms": 843.3382529765368,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_thermostat\",\"arguments\":{\"temperature\":\"90\",\"unit\":\"C\"}}]",
+    "passes": 10,
+    "tokens": 18,
+    "ms": 342.3844779608771,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set a waypoint at latitude 37.7749, longitude -122.4194",
+   "expected": {
+    "lat": "37.7749",
+    "lon": "-122.4194"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"37.7749\",\"lon\":\"-122.4194\"}}]",
+    "passes": 27,
+    "tokens": 26,
+    "ms": 1071.474731026683,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"37.7749\",\"lon\":\"-122.4194\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 677.4152749567293,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Add a waypoint in Sydney",
+   "expected": {
+    "lat": "-33.8688",
+    "lon": "151.2093"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 240.38771499181166,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"-33.8688\",\"lon\":\"-151.20921\"}}]",
+    "passes": 21,
+    "tokens": 27,
+    "ms": 763.8604529784061,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Create a waypoint at latitude 51.5074, longitude -0.1278",
+   "expected": {
+    "lat": "51.5074",
+    "lon": "-0.1278"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"51.5074\",\"lon\":\"-0.1278\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 979.7614259878173,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"51.5074\",\"lon\":\"-0.1278\"}}]",
+    "passes": 17,
+    "tokens": 23,
+    "ms": 655.2792759612203,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set waypoint at Tokyo",
+   "expected": {
+    "lat": "35.6762",
+    "lon": "139.6503"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 255.77262399019673,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"-122.617\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 729.8366599716246,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Place a waypoint at latitude 40.7128, longitude -74.0060",
+   "expected": {
+    "lat": "40.7128",
+    "lon": "-74.0060"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"40.7128\",\"lon\":\"-74.0060\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1002.8644339763559,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"40.7128\",\"lon\":\"-74.0060\"}}]",
+    "passes": 17,
+    "tokens": 23,
+    "ms": 646.1538660223596,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Add waypoint in Cairo",
+   "expected": {
+    "lat": "30.0444",
+    "lon": "31.2357"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"Cairo\",\"lon\":\"-180.416\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1070.3365909866989,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"-122.617\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 716.6815419914201,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set a waypoint at latitude -22.9068, longitude -43.1729",
+   "expected": {
+    "lat": "-22.9068",
+    "lon": "-43.1729"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"-22.9068\",\"lon\":\"-43.1729\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1203.0378290219232,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"-22.9068\",\"lon\":\"-43.1729\"}}]",
+    "passes": 21,
+    "tokens": 27,
+    "ms": 784.3364670407027,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Create a waypoint in Cape Town",
+   "expected": {
+    "lat": "-33.9249",
+    "lon": "18.4241"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 239.6429890068248,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"-122.617\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 743.6625400441699,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Waypoint at latitude 55.7558, longitude 37.6173",
+   "expected": {
+    "lat": "55.7558",
+    "lon": "37.6173"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"55.7558\",\"lon\":\"37.6173\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 997.950195975136,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"55.7558\",\"lon\":\"37.6173\"}}]",
+    "passes": 18,
+    "tokens": 24,
+    "ms": 649.260170001071,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set waypoint at Mumbai",
+   "expected": {
+    "lat": "19.0760",
+    "lon": "72.8777"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"Mumbai\",\"lon\":\"-180.416\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1016.2882289732806,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"-151.2092\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 701.1936500202864,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Create waypoint at latitude -33.9249, longitude 18.4241",
+   "expected": {
+    "lat": "-33.9249",
+    "lon": "18.4241"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"-33.9249\",\"lon\":\"18.4241\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1009.9286730401218,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"-33.9249\",\"lon\":\"18.4241\"}}]",
+    "passes": 18,
+    "tokens": 24,
+    "ms": 654.2381509789266,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Add a waypoint in London",
+   "expected": {
+    "lat": "51.5074",
+    "lon": "-0.1278"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 208.44295603455976,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"-122.617\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 756.3856769702397,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Place waypoint at latitude 35.6762, longitude 139.6503",
+   "expected": {
+    "lat": "35.6762",
+    "lon": "139.6503"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6762\",\"lon\":\"139.6503\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1036.3288189982995,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6762\",\"lon\":\"139.6503\"}}]",
+    "passes": 18,
+    "tokens": 24,
+    "ms": 661.0286670038477,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set a waypoint in New York",
+   "expected": {
+    "lat": "40.7128",
+    "lon": "-74.0060"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 220.8704850054346,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"-74.0522\",\"lon\":\"-74.0060\"}}]",
+    "passes": 19,
+    "tokens": 25,
+    "ms": 658.5228269686922,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Waypoint at latitude 37.7749, longitude -122.4194",
+   "expected": {
+    "lat": "37.7749",
+    "lon": "-122.4194"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"37.7749\",\"lon\":\"-122.4194\"}}]",
+    "passes": 27,
+    "tokens": 26,
+    "ms": 1041.0457520047203,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"37.7749\",\"lon\":\"-122.4194\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 670.9087360068224,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Add waypoint in Rio de Janeiro",
+   "expected": {
+    "lat": "-22.9068",
+    "lon": "-43.1729"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"Rio de Janeiro\",\"lon\":\"Janeiro\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1154.1471219970845,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"90.0\",\"lon\":\"-180.0\"}}]",
+    "passes": 15,
+    "tokens": 21,
+    "ms": 566.7791260057129,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set waypoint at latitude 30.0444, longitude 31.2357",
+   "expected": {
+    "lat": "30.0444",
+    "lon": "31.2357"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"30.0444\",\"lon\":\"31.2357\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 998.9787290105596,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"30.0444\",\"lon\":\"31.2357\"}}]",
+    "passes": 17,
+    "tokens": 23,
+    "ms": 603.4983940189704,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Create a waypoint in Moscow",
+   "expected": {
+    "lat": "55.7558",
+    "lon": "37.6173"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 217.40067499922588,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"45.4685\",\"lon\":\"-122.416\"}}]",
+    "passes": 21,
+    "tokens": 27,
+    "ms": 745.7351280027069,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Place waypoint at latitude 19.0760, longitude 72.8777",
+   "expected": {
+    "lat": "19.0760",
+    "lon": "72.8777"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"19.0760\",\"lon\":\"72.8777\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1021.935119992122,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"19.0760\",\"lon\":\"72.8777\"}}]",
+    "passes": 17,
+    "tokens": 23,
+    "ms": 626.0094050085172,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_waypoint",
+   "query": "Set waypoint in Cape Town",
+   "expected": {
+    "lat": "-33.9249",
+    "lon": "18.4241"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"Cape Town\",\"lon\":\"-180.416\"}}]",
+    "passes": 28,
+    "tokens": 27,
+    "ms": 1161.0350839910097,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_waypoint\",\"arguments\":{\"lat\":\"35.6895\",\"lon\":\"-122.617\"}}]",
+    "passes": 20,
+    "tokens": 26,
+    "ms": 713.8860859558918,
+    "forced": 9,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Set a timer for 1 hour 30 minutes",
+   "expected": {
+    "hours": "1",
+    "minutes": "30",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"1 hour\",\"minutes\":\"30 minutes\",\"seconds\":\"30 minutes\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1035.980187007226,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"1\",\"minutes\":\"30\",\"seconds\":\"30\"}}]",
+    "passes": 14,
+    "tokens": 21,
+    "ms": 489.23011001897976,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Give me 45 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "0",
+    "seconds": "45"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 246.75469199428335,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"45\",\"seconds\":\"45\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 451.96094701532274,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "2 and a half minutes",
+   "expected": {
+    "hours": "0",
+    "minutes": "2",
+    "seconds": "30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"50\",\"hours\":\"2\",\"seconds\":\"50\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 1015.5633309623227,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"2\",\"minutes\":\"50\",\"seconds\":\"50\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 509.56982595380396,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Countdown 10 minutes",
+   "expected": {
+    "hours": "0",
+    "minutes": "10",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[]",
+    "passes": 3,
+    "tokens": 2,
+    "ms": 227.9721779632382,
+    "score": {
+     "json_ok": true,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"21\",\"minutes\":\"10\",\"seconds\":\"26\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 489.9475100100972,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Set timer for 23 hours",
+   "expected": {
+    "hours": "23",
+    "minutes": "0",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"23\",\"minutes\":\"23\",\"minutes\":\"24\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 958.3488309872337,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"23\",\"minutes\":\"23\",\"seconds\":\"36\"}}]",
+    "passes": 15,
+    "tokens": 23,
+    "ms": 509.4277230091393,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "30 seconds please",
+   "expected": {
+    "hours": "0",
+    "minutes": "0",
+    "seconds": "30"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"30 seconds\",\"hours\":\"30 seconds\",\"minutes\":\"30 seconds\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1057.087924971711,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"30\",\"seconds\":\"30\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 463.74297596048564,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "5 hours and 15 minutes",
+   "expected": {
+    "hours": "5",
+    "minutes": "15",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"5\",\"minutes\":\"5 minutes\",\"seconds\":\"15 minutes\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 970.8186169737019,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"5\",\"minutes\":\"5\",\"seconds\":\"15\"}}]",
+    "passes": 15,
+    "tokens": 21,
+    "ms": 530.0771279726177,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Timer for 59 minutes",
+   "expected": {
+    "hours": "0",
+    "minutes": "59",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"59\",\"hours\":\"3pm\",\"seconds\":\"35000\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1054.3116519693285,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"5\",\"minutes\":\"59\",\"seconds\":\"59\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 528.1445920118131,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "1 minute and 45 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "1",
+    "seconds": "45"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"1 minute\",\"hours\":\"45 seconds\",\"seconds\":\"45 seconds\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1018.1359960115515,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"1\",\"minutes\":\"1\",\"seconds\":\"45\"}}]",
+    "passes": 14,
+    "tokens": 20,
+    "ms": 462.64404500834644,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "3 hours",
+   "expected": {
+    "hours": "3",
+    "minutes": "0",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"3 hours\",\"hours\":\"3 hours\",\"seconds\":\"3 hours\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1093.1874580564909,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"3\",\"seconds\":\"3\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 587.7581629902124,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Set a 12 hour timer",
+   "expected": {
+    "hours": "12",
+    "minutes": "0",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"12,\"minutes\":\"60\",\"seconds\":\"15:30\"}}]",
+    "passes": 23,
+    "tokens": 22,
+    "ms": 930.7282619993202,
+    "score": {
+     "json_ok": false,
+     "name_ok": false,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"12\",\"minutes\":\"30\",\"seconds\":\"14\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 457.6148010091856,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "15 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "0",
+    "seconds": "15"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"15 seconds\",\"hours\":\"3pm\",\"minutes\":\"35\"}}]",
+    "passes": 25,
+    "tokens": 24,
+    "ms": 1021.5773049858399,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": false,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"15\",\"seconds\":\"15\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 457.419500045944,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "2 hours 30 minutes 15 seconds",
+   "expected": {
+    "hours": "2",
+    "minutes": "30",
+    "seconds": "15"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"30 minutes\",\"hours\":\"2 hours\",\"seconds\":\"15 seconds\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1019.9470209772699,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"2\",\"minutes\":\"30\",\"seconds\":\"15\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 524.3327689822763,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "45 minutes and 59 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "45",
+    "seconds": "59"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"45 minutes\",\"seconds\":\"59 seconds\",\"hours\":\"45 minutes\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1069.2080139997415,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"45\",\"seconds\":\"59\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 438.0053890054114,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "1 hour and 1 minute",
+   "expected": {
+    "hours": "1",
+    "minutes": "1",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"1 hour\",\"minutes\":\"1\",\"seconds\":\"35 minutes\"}}]",
+    "passes": 24,
+    "tokens": 23,
+    "ms": 1013.8015370466746,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"1\",\"minutes\":\"1\",\"seconds\":\"35\"}}]",
+    "passes": 15,
+    "tokens": 21,
+    "ms": 516.3514229934663,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "20 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "0",
+    "seconds": "20"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"20 seconds\",\"seconds\":\"300\",\"hours\":\"321.691\"}}]",
+    "passes": 29,
+    "tokens": 28,
+    "ms": 1149.2730870377272,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"20\",\"seconds\":\"20\"}}]",
+    "passes": 12,
+    "tokens": 20,
+    "ms": 417.40347299491987,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "6 hours 45 minutes",
+   "expected": {
+    "hours": "6",
+    "minutes": "45",
+    "seconds": "0"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"45 minutes\",\"hours\":\"6 hours\",\"seconds\":\"6 minutes\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1061.2853789934888,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"6\",\"minutes\":\"45\",\"seconds\":\"45\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 492.19461798202246,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "59 minutes and 59 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "59",
+    "seconds": "59"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"59\",\"seconds\":\"59 minutes\",\"hours\":\"3/59\"}},{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"59\",\"seconds\":\"59 seconds\",\"hours\":\"3/59\"}}]",
+    "passes": 48,
+    "tokens": 47,
+    "ms": 1808.3554449840449,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"5\",\"minutes\":\"59\",\"seconds\":\"59\"}}]",
+    "passes": 13,
+    "tokens": 20,
+    "ms": 474.88459199666977,
+    "forced": 12,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Timer for 8 hours 30 minutes 45 seconds",
+   "expected": {
+    "hours": "8",
+    "minutes": "30",
+    "seconds": "45"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"8 hours\",\"minutes\":\"30 minutes\",\"seconds\":\"45 seconds\"}}]",
+    "passes": 26,
+    "tokens": 25,
+    "ms": 1051.5561099746265,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"8\",\"minutes\":\"30\",\"seconds\":\"45\"}}]",
+    "passes": 14,
+    "tokens": 22,
+    "ms": 493.57459699967876,
+    "forced": 13,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": true
+   }
+  },
+  {
+   "domain": "set_timer",
+   "query": "Just 5 seconds",
+   "expected": {
+    "hours": "0",
+    "minutes": "0",
+    "seconds": "5"
+   },
+   "stock": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"minutes\":\"059-00\",\"seconds\":\"05-00000\",\"hours\":\"26.1082\"}}]",
+    "passes": 33,
+    "tokens": 32,
+    "ms": 1257.6312460005283,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": false
+    },
+    "exact": false
+   },
+   "llg": {
+    "text": "[{\"name\":\"set_timer\",\"arguments\":{\"hours\":\"3\",\"minutes\":\"52\",\"seconds\":\"5\"}}]",
+    "passes": 15,
+    "tokens": 22,
+    "ms": 551.5267069567926,
+    "forced": 11,
+    "score": {
+     "json_ok": true,
+     "name_ok": true,
+     "keys_ok": true,
+     "values_ok": true
+    },
+    "exact": false
+   }
+  }
+ ],
+ "wall_s": 316.89607044594595
+}

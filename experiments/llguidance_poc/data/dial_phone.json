@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Call 415-555-0199",
+    "arguments": {"number": "415-555-0199"}
+  },
+  {
+    "query": "Dial (212) 555 0147",
+    "arguments": {"number": "212-555-0147"}
+  },
+  {
+    "query": "Phone 8005551234",
+    "arguments": {"number": "800-555-1234"}
+  },
+  {
+    "query": "Ring 617.555.0182",
+    "arguments": {"number": "617-555-0182"}
+  },
+  {
+    "query": "Call me at (305) 555-0123",
+    "arguments": {"number": "305-555-0123"}
+  },
+  {
+    "query": "Dial the number 2025550145",
+    "arguments": {"number": "202-555-0145"}
+  },
+  {
+    "query": "Phone 703.555.0198",
+    "arguments": {"number": "703-555-0198"}
+  },
+  {
+    "query": "Ring up 5125550176",
+    "arguments": {"number": "512-555-0176"}
+  },
+  {
+    "query": "Can you call (206) 555-0123?",
+    "arguments": {"number": "206-555-0123"}
+  },
+  {
+    "query": "Please dial 303-555-0198",
+    "arguments": {"number": "303-555-0198"}
+  },
+  {
+    "query": "Call 408 555 0147",
+    "arguments": {"number": "408-555-0147"}
+  },
+  {
+    "query": "Dial (360)5550182",
+    "arguments": {"number": "360-555-0182"}
+  },
+  {
+    "query": "Phone 6145550145",
+    "arguments": {"number": "614-555-0145"}
+  },
+  {
+    "query": "Ring this number: 404.555.0199",
+    "arguments": {"number": "404-555-0199"}
+  },
+  {
+    "query": "Place a call to (720) 555 0123",
+    "arguments": {"number": "720-555-0123"}
+  },
+  {
+    "query": "Dial 813 555-0147",
+    "arguments": {"number": "813-555-0147"}
+  },
+  {
+    "query": "Call (415)555-0182",
+    "arguments": {"number": "415-555-0182"}
+  },
+  {
+    "query": "Phone 5035550198",
+    "arguments": {"number": "503-555-0198"}
+  },
+  {
+    "query": "Ring 972.555.0145",
+    "arguments": {"number": "972-555-0145"}
+  },
+  {
+    "query": "Can you call (916) 555 0176?",
+    "arguments": {"number": "916-555-0176"}
+  }
+]
