@@ -1,0 +1,82 @@
+[
+  {
+    "query": "Set a waypoint at latitude 37.7749, longitude -122.4194",
+    "arguments": {"lat": "37.7749", "lon": "-122.4194"}
+  },
+  {
+    "query": "Add a waypoint in Sydney",
+    "arguments": {"lat": "-33.8688", "lon": "151.2093"}
+  },
+  {
+    "query": "Create a waypoint at latitude 51.5074, longitude -0.1278",
+    "arguments": {"lat": "51.5074", "lon": "-0.1278"}
+  },
+  {
+    "query": "Set waypoint at Tokyo",
+    "arguments": {"lat": "35.6762", "lon": "139.6503"}
+  },
+  {
+    "query": "Place a waypoint at latitude 40.7128, longitude -74.0060",
+    "arguments": {"lat": "40.7128", "lon": "-74.0060"}
+  },
+  {
+    "query": "Add waypoint in Cairo",
+    "arguments": {"lat": "30.0444", "lon": "31.2357"}
+  },
+  {
+    "query": "Set a waypoint at latitude -22.9068, longitude -43.1729",
+    "arguments": {"lat": "-22.9068", "lon": "-43.1729"}
+  },
+  {
+    "query": "Create a waypoint in Cape Town",
+    "arguments": {"lat": "-33.9249", "lon": "18.4241"}
+  },
+  {
+    "query": "Waypoint at latitude 55.7558, longitude 37.6173",
+    "arguments": {"lat": "55.7558", "lon": "37.6173"}
+  },
+  {
+    "query": "Set waypoint at Mumbai",
+    "arguments": {"lat": "19.0760", "lon": "72.8777"}
+  },
+  {
+    "query": "Create waypoint at latitude -33.9249, longitude 18.4241",
+    "arguments": {"lat": "-33.9249", "lon": "18.4241"}
+  },
+  {
+    "query": "Add a waypoint in London",
+    "arguments": {"lat": "51.5074", "lon": "-0.1278"}
+  },
+  {
+    "query": "Place waypoint at latitude 35.6762, longitude 139.6503",
+    "arguments": {"lat": "35.6762", "lon": "139.6503"}
+  },
+  {
+    "query": "Set a waypoint in New York",
+    "arguments": {"lat": "40.7128", "lon": "-74.0060"}
+  },
+  {
+    "query": "Waypoint at latitude 37.7749, longitude -122.4194",
+    "arguments": {"lat": "37.7749", "lon": "-122.4194"}
+  },
+  {
+    "query": "Add waypoint in Rio de Janeiro",
+    "arguments": {"lat": "-22.9068", "lon": "-43.1729"}
+  },
+  {
+    "query": "Set waypoint at latitude 30.0444, longitude 31.2357",
+    "arguments": {"lat": "30.0444", "lon": "31.2357"}
+  },
+  {
+    "query": "Create a waypoint in Moscow",
+    "arguments": {"lat": "55.7558", "lon": "37.6173"}
+  },
+  {
+    "query": "Place waypoint at latitude 19.0760, longitude 72.8777",
+    "arguments": {"lat": "19.0760", "lon": "72.8777"}
+  },
+  {
+    "query": "Set waypoint in Cape Town",
+    "arguments": {"lat": "-33.9249", "lon": "18.4241"}
+  }
+]

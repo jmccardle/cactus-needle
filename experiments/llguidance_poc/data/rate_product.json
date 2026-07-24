@@ -1,0 +1,82 @@
+[
+  {
+    "query": "I'd rate it a perfect 5 stars",
+    "arguments": {"stars": "5"}
+  },
+  {
+    "query": "Give this product 5 stars, absolutely amazing",
+    "arguments": {"stars": "5"}
+  },
+  {
+    "query": "Best purchase ever, rate it 5 out of 5",
+    "arguments": {"stars": "5"}
+  },
+  {
+    "query": "This deserves the maximum rating of five stars",
+    "arguments": {"stars": "5"}
+  },
+  {
+    "query": "Rate this a solid 4 stars",
+    "arguments": {"stars": "4"}
+  },
+  {
+    "query": "I'd give it four stars, really good",
+    "arguments": {"stars": "4"}
+  },
+  {
+    "query": "Pretty excellent, I'd say 4 out of 5",
+    "arguments": {"stars": "4"}
+  },
+  {
+    "query": "Great product, rate it four stars",
+    "arguments": {"stars": "4"}
+  },
+  {
+    "query": "It's okay, I'd rate it 3 stars",
+    "arguments": {"stars": "3"}
+  },
+  {
+    "query": "Give this three out of five stars",
+    "arguments": {"stars": "3"}
+  },
+  {
+    "query": "Not bad, not great - rate it three",
+    "arguments": {"stars": "3"}
+  },
+  {
+    "query": "Average product, deserves 3 stars",
+    "arguments": {"stars": "3"}
+  },
+  {
+    "query": "Not very good, I rate it 2 stars",
+    "arguments": {"stars": "2"}
+  },
+  {
+    "query": "Disappointing, give it two out of five",
+    "arguments": {"stars": "2"}
+  },
+  {
+    "query": "Below average, rate this 2 stars",
+    "arguments": {"stars": "2"}
+  },
+  {
+    "query": "I'd only give it two stars",
+    "arguments": {"stars": "2"}
+  },
+  {
+    "query": "This is terrible, rate it 1 star",
+    "arguments": {"stars": "1"}
+  },
+  {
+    "query": "Worst product ever, one star",
+    "arguments": {"stars": "1"}
+  },
+  {
+    "query": "Don't recommend, give it 1 out of 5 stars",
+    "arguments": {"stars": "1"}
+  },
+  {
+    "query": "Poor quality, deserves just one star",
+    "arguments": {"stars": "1"}
+  }
+]
